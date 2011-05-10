@@ -1,0 +1,5 @@
+bin/
+*~
+gen/
+scamp.keystore
+durex.env
