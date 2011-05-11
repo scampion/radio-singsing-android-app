@@ -1,31 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
+	      android:orientation="vertical"
+	      android:layout_width="fill_parent"
+	      android:layout_height="fill_parent"
+	      >
   <ImageView   
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
      android:src="@drawable/logo"
-     android:layout_gravity="center_horizontal"
+     android:layout_gravity="center"
      />
 
-  <Button android:id="@+id/low"
-	  android:width="100px"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Bas débit (24kB/s)"
-	  android:layout_gravity="center_horizontal"
-	  />
+  <LinearLayout
+     android:layout_centerHorizontal="true"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:gravity="center" 
+     >
+    <Button android:id="@+id/low"
+	    android:width="100px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bas débit (24kB/s)"
+	    android:layout_gravity="center_horizontal"
+	    />
 
-  <Button android:id="@+id/high"
+    <Button android:id="@+id/high"
+	    android:width="100px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Haut débit (128 kB/s)"
+	    android:layout_gravity="center_horizontal"
+	    />
+  </LinearLayout>
+
+  <TextView android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome !!" 
+	    android:layout_gravity="center_horizontal" />
+
+  <LinearLayout
+     android:layout_centerHorizontal="true"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:gravity="center" 
+     >
+  <Button android:id="@+id/quit"
 	  android:width="100px"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="Haut débit (128 kB/s)"
-	  android:layout_gravity="center_horizontal"
-	  />
-  
+          android:text="Quitter"
+	  android:layout_gravity="bottom" />
+  </LinearLayout>
 </LinearLayout>
 
