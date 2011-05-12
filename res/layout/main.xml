@@ -62,11 +62,18 @@
 
   <LinearLayout
      android:layout_centerHorizontal="true"
-     android:orientation="vertical"
+     android:orientation="horizontal"
      android:layout_width="fill_parent"
      android:layout_height="fill_parent"
      android:gravity="center"
      >
+    <Button android:id="@+id/refresh"
+	    android:width="100px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rafraîchir"
+	    android:layout_gravity="center_horizontal" />
+
     <Button android:id="@+id/exit"
 	    android:width="100px"
             android:layout_width="wrap_content"
